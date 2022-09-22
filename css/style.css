@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  height: 40px;
+  align-items: center;
+}
+
+
+main {
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+footer {
+  height: 60px;
+  background-color: #222222;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin-right: 5px;
+}
+
+button {
+  padding: 5px 5px;
+  background-color: #4a4a4a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* header ul li {    perchè no?
+  justify-content: center;
+  align-items: center;
+} */
