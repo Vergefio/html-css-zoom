@@ -1,7 +1,16 @@
+/* general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 2px solid red; */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+  background-color: black;
 }
 
 header {
@@ -12,24 +21,9 @@ header {
   align-items: center;
 }
 
-
 main {
   height: calc(100vh - 100px);
   overflow: auto;
-}
-
-footer {
-  height: 60px;
-  background-color: #222222;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-}
-
-header ul li {
-  margin-right: 5px;
 }
 
 button {
@@ -40,7 +34,91 @@ button {
   cursor: pointer;
 }
 
-/* header ul li {    perchè no?
-  justify-content: center;
-  align-items: center;
-} */
+img {
+  max-width: 100%;
+}
+
+/* header */
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  margin-right: 5px;
+}
+
+
+.fa-table-cells {
+  padding-right: 5px;
+}
+
+/* main */
+.photo {
+  width: calc(100% / 5);
+  padding: 5px 5px;
+  min-width: 30vh;
+  position: relative;
+}
+
+.photo .photo-badge .badge {
+  position: absolute;
+}
+
+.photo-badge .badge {
+  padding: 5px 10px;
+  bottom: 8px;
+  left: 5px;
+  font-size: 1rem;
+  background-color: rgba(237, 231, 225, .5);
+  color: white;
+}
+
+/* footer */
+footer {
+  background-color: #222222;
+  color: white;
+  height: auto;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+}
+
+footer ul li {
+  padding: 20px;
+}
+
+.fa-chevron-up {
+  font-size: 0.5rem;
+}
+
+.active:active {
+  color: green;
+}
+
+.right .btn {
+  color: red;
+  border: none;
+  border-radius: 0;
+  background-color: #4a4a4a;
+}
+
+span {
+  display: block;
+}
+
+#microphone {
+  text-align: center;
+}
+
+#cam {
+  text-align: center;
+}
