@@ -122,3 +122,7 @@ footer ul li {
 i {
   font-size: 20px;
 }
+
+.left .right {
+  flex-shrink: 0;
+}
